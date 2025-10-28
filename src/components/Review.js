@@ -55,7 +55,7 @@ const Review=()=>{
     }
     setIndex(randomIndex);
   };
-   return (
+ return (
     <div className="review">
       <h4 id={`author-${index}`} className="author">{name}</h4>
       <p className="job">{job}</p>
@@ -66,8 +66,8 @@ const Review=()=>{
         <button className="prev-btn" onClick={prevPerson}>Prev</button>
         <button className="next-btn" onClick={nextPerson}>Next</button>
       </div>
-      <button className="random-btn" onClick={randomPerson}>Surprise Me</button>
+      <button className="random-btn" onClick={randomPerson}>surprise me</button>
     </div>
   );
-}
+};
 export default Review;
