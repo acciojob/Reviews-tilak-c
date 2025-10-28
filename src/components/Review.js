@@ -41,14 +41,14 @@ const reviews=[
 const Review=()=>{
     const [index,setIndex]=useState(0);
     const {id,name,job,image,text}=reviews[index];
-    const nextReview=()=>{
+    const nextPerson=()=>{
         setIndex((prevIndex)=>(prevIndex+1)%reviews.length);
     }
-    const prevReview=()=>{
+    const prevPerson=()=>{
         setIndex((prevIndex)=>
             prevIndex===0?reviews.length-1:prevIndex-1);
     }
-    const randomReview = () => {
+    const randomPerson = () => {
     let randomIndex = Math.floor(Math.random() * reviews.length);
     while (randomIndex === index) {
       randomIndex = Math.floor(Math.random() * reviews.length);
