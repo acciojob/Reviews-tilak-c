@@ -55,23 +55,19 @@ const Review=()=>{
     }
     setIndex(randomIndex);
   };
-    return (
-    <div>
-        <h1 id="review-heading">Our reviews</h1>
-        {/* {reviews.map((review,index)=>( */}
-            <div className="review">
-            <img src={image} alt={name} className="person-img"/>
-            <h2 className="author">{name}</h2>
-            <h3 className="job">{job}</h3>
-            <p className="info">{text}</p>
-            </div>
-        {/* ))}  */}
-        <div className="button-container">
-            <button className="prev-btn" onClick={prevReview}>Previous</button>
-            <button className="next-btn" onClick={nextReview}>Next</button>
-            </div>   
-            <button className="random-btn" onClick={randomReview}>Surprise Me</button>
+   return (
+    <div className="review">
+      <h4 id={`author-${index}`}>{name}</h4>
+      <p className="job">{job}</p>
+      <img src={image} alt={name} className="person-img" />
+      <p className="info">{text}</p>
+
+      <div className="button-container">
+        <button className="prev-btn" onClick={prevPerson}>Prev</button>
+        <button className="next-btn" onClick={nextPerson}>Next</button>
+      </div>
+      <button className="random-btn" onClick={randomPerson}>Surprise Me</button>
     </div>
-  )
+  );
 }
 export default Review;
