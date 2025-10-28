@@ -57,7 +57,7 @@ const Review=()=>{
   };
  return (
     <div className="review">
-      <h4 id={`author-${index}`} className="author">{name}</h4>
+      <h4 id={`author-${id}`} className="author">{name}</h4>
       <p className="job">{job}</p>
       <img src={image} alt={name} className="person-img" />
       <p className="info">{text}</p>
